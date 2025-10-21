@@ -1,13 +1,13 @@
-### Instalasi depedencies
-
-```bash
+# 1. Install dependencies
 pip install -r requirements.txt
-```
 
-'' sesuaikan konfigurasi .env
+# 2. Buat database MySQL
+CREATE DATABASE CDatabase;
 
-### Untuk menjalankan
+# 3. Update .env dengan kredensial database Anda
 
-```bash
+# 4. Apply migration
+flask db upgrade
+
+# 5. Jalankan aplikasi
 python run.py
-```
